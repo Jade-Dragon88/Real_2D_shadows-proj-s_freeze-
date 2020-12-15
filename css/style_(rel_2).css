@@ -1,0 +1,45 @@
+
+:root{
+	--left: 5%;
+	--grad-h: 400px;
+	--grad-delta-h: 2px;
+	--grad-w: 10px;
+	--grad-blur: 1%;
+	--grad-skew: 199deg;
+}
+body{
+	overflow: hidden;
+}
+
+.main{
+	/*display: flex;*/
+	/*flex-direction: column;	*/
+	/*border: 5px solid green;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	height: 100vh;
+	overflow: inherit;
+	/* border: 1px solid red; */
+}
+
+.main_obj{
+		position: absolute;
+		top: 50%;
+		left: 50%;	
+		/* transform: translate(-50%, -50%); */
+		width: 4px;
+		height: 100px;	
+		background-color: red; 	
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,195 @@
+
+:root{
+	--left: 5%;
+	--grad-h: 400px;
+	--grad-delta-h: 2px;
+	--grad-w: 10px;
+	--grad-blur: 1%;
+	--grad-skew: 199deg;
+}
+
+
+.main{
+	/*display: flex;*/
+	/*flex-direction: column;	*/
+	/*border: 5px solid green;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	height: 100vh;
+}
+
+//.block-shadows{
+//	/*display: flex;*/
+//	/*justify-content: center;*/
+//	position: relative;
+//	height: 600px;
+//	width: 1000px;
+//	border: 1px solid black;
+//	background-color: rgba(0,255,0,.02);
+//	/*border-left: none;*/
+//	overflow: hidden;
+//}
+
+/*<!-- ====================================  ЧЕРЕЗ ТЕНИ BOX-SHADOW  (ver.1) ======= -->*/
+	[class*='part']{
+		position: absolute;
+		top: 50%;
+		height: 100px;
+		width: 10px;
+		
+		/*border: 1px solid blue;*/
+		overflow: hidden;
+	}
+/*	[class*='cont']{
+		position: absolute;
+		top: -50%;
+		transform: 	translateY(-50%);
+		height: 30px;
+		width: 30px;
+		border: 1px solid red;
+		box-shadow: 0px 50px 10px rgba(0,0,0,1);
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}*/
+
+	.part1{
+		/*display: none;*/
+		left: 30%;
+		/*width: 10px;	*/
+	}
+	.cont1{
+		box-shadow: 0px 100px 10px rgba(0,0,0,1),
+					0px 100px 10px rgba(0,0,0,1),
+					0px 100px 10px rgba(0,0,0,1),
+					0px 100px 10px rgba(0,0,0,1),
+					0px 100px 10px rgba(0,0,0,1);
+		/*left: 50%;
+		transform: translate(-50%,-50%);*/
+	}
+	.part2{
+		/*display: none;*/
+		left: calc(30% + 10px);
+
+		/*left: 50%;*/
+		/*transform: translate(-50%,-50%);*/
+		/*width: 10px;*/
+		/*box-shadow: 0px 575px 10px rgba(0,0,0,1);*/
+	}
+	.cont2{
+		height: 25px;
+		box-shadow: 0px 100px 15px rgba(0,0,0,1),
+					0px 100px 15px rgba(0,0,0,1),
+					0px 100px 15px rgba(0,0,0,1),
+					0px 100px 15px rgba(0,0,0,1),
+					0px 100px 15px rgba(0,0,0,1);
+		/*left: 50%;
+		transform: translate(-50%,-50%);*/	
+	}
+	.part3{
+		left: calc(30% + 20px);
+		/*box-shadow: 0px 575px 10px rgba(0,0,0,1);*/
+	}
+	.cont3{
+		height: 20px;
+		box-shadow: 0px 100px 20px rgba(0,0,0,1),
+					0px 100px 20px rgba(0,0,0,1),
+					0px 100px 20px rgba(0,0,0,1),
+					0px 100px 20px rgba(0,0,0,1),
+					0px 100px 20px rgba(0,0,0,1);
+	}
+
+
+
+/*<!-- ====================================  ЧЕРЕЗ ЛИНЕЙНЫЙ ГРАДИЕНТ  ======= -->*/
+
+	[class*='grad_bottom']{
+		/*position: absolute;*/
+		/*top: 50%;*/
+		/*transform: translateY(-50%);*/
+		/*height: var(--grad-h);*/
+		/*width: var(--grad-w);*/
+		/*width: 10px;	*/
+		/*border: 1px solid green;*/
+		/*overflow: hidden;*/
+	}
+
+.main_obj{
+		position: absolute;
+		top: 30%;
+		left: 60%;	
+		transform: translateY(-50%);
+		width: 50px;
+		height: 60px;	
+		background-color: green; 	
+}
+
+
+	[number='0']{
+		/*transform: translateY(-50%);*/
+	}
+
+	[class*='grad_upper']{
+		position: absolute;
+		top: calc(50% - 100px);
+	}
+
+	.grad_upper1{
+		width: 50px;
+		height: 100px;
+		/*background-color: red;*/
+		transform-origin: 0 100%
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<!-- ====================================  ЧЕРЕЗ ТЕНИ BOX-SHADOW  (ver.2)  ======= -->*/
+
+	.inner-shadow-block{
+		position: absolute;
+		top: 50%; left: 10%;
+		transform: translateY(-50%);
+		height: 200px; width: 50px;
+		border: 10px solid red;
+
+		box-shadow: 50px 0px 0px 0px rgba(0,255,0,.5),
+								85px 0px 0px 0px rgba(0,0,255,.5)
+	}
